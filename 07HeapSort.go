@@ -22,7 +22,7 @@ func HeapSort(a []int) {
 
 func AdjustHeap(a []int, i, length int) {
 	tmp := a[i]
-	for k := i*2 + 1; k < length; k = k*2 +1 {
+	for k := i*2 + 1; k < length; k = k*2 + 1 {
 		if k+1 < length && a[k] < a[k+1] {
 			k++
 		}
